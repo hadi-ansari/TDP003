@@ -1,0 +1,80 @@
+{% extends "template.html" %}
+{% block body %}
+<style>
+        nav a#techniques_page { border-bottom: 4px solid #ec8291; } 
+</style>
+
+<div class="top">
+  <form class="tech_search">
+    <input type="checkbox" name="techniques" id="python" value="python" {% if "python" in tech_check %} Checked {% endif %}> 
+    <label for="python">Python</label>
+    
+    <input type="checkbox" name="techniques" id="c++" value="c++"  {% if "c++" in tech_check %} Checked {% endif %}>
+    <label for="c++">C++</label>
+
+    <input type="checkbox" name="techniques" id="ruby" value="ruby" {% if "ruby" in tech_check %} Checked {% endif %}>
+    <label for="ruby">Ruby</label>
+
+    <input type="checkbox" name="techniques" id="css" value="css"  {% if "css" in tech_check %} Checked {% endif %}>
+    <label for="css">Css</label>
+
+    <input type="checkbox" name="techniques" id="gimp" value="gimp"  {% if "gimp" in tech_check %} Checked {% endif %}>
+    <label for="gimp">Gimp</label>
+   
+    <input type="checkbox" name="techniques" id="flask" value="flask" {% if "flask" in tech_check %} Checked {% endif %}>
+    <label for="flask">Flask</label>
+     <br>
+
+    <input type="checkbox" name="techniques" id="html" value="html" {% if "html" in tech_check %} Checked {% endif %}> 
+    <label for="html">Html</label>
+        
+
+    <input type="checkbox" name="techniques" id="jinja2" value="jinja2" {% if "jinja2" in tech_check %} Checked {% endif %}>
+    <label for="jinja2">Jinja2</label>
+    
+    <input type="checkbox" name="techniques" id="latex" value="latex"  {% if "latex" in tech_check %} Checked {% endif %}>
+    <label for="latex">Latex</label>
+
+    <input type="checkbox" name="techniques" id="javascript" value="javascript"  {% if "javascript" in tech_check %} Checked {% endif %}>
+    <label for="javascript">Javascript</label>
+
+    <input type="checkbox" name="techniques" id="react" value="react"  {% if "react" in tech_check %} Checked {% endif %}>
+    <label for="react">React</label>
+
+    <input type="checkbox" name="techniques" id="java" value="java"  {% if "java" in tech_check %} Checked {% endif %}>
+    <label for="java">Java</label>
+
+    <input type="checkbox" name="techniques" id="c#" value="c#"  {% if "c#" in tech_check %} Checked {% endif %}>
+    <label for="c#">C#</label>
+
+    <input type="checkbox" name="techniques" id="wpf" value="wpf"  {% if "wpf" in tech_check %} Checked {% endif %}>
+    <label for="wpf">WPF</label>
+
+    <input type="checkbox" name="techniques" id="mvvm" value="mvvm"  {% if "mvvm" in tech_check %} Checked {% endif %}>
+    <label for="mvvm">MVVM</label>
+      
+    
+    <br>
+    
+  
+    <input class="search_button" type="submit" value="Sök!"/>
+  </form>
+</div>
+<div class="main">
+{% if projects != [] %}
+{% for project in projects %}
+<a href="{{ url_for ('project', id= project.project_id) }}"><div class="project_overview">
+  <div class="small_img"><img src="../static/images/{{ project.small_image  }}" title="Projektnamn: {{project.project_name}}"></div>
+  <div class="short_info"><h1>{{ project.project_name }}</h1>
+    <p>{{ project.short_description }}</p>
+  </div>
+</div></a>
+<br>
+{% endfor %}
+{% else %}
+Inget hittades!
+{% endif %}
+  
+</div>
+
+{% endblock %}

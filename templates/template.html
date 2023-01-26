@@ -1,0 +1,39 @@
+
+<html>
+	<head>
+	  <title>My portfolio</title>
+	  <link href="../static/style/style.css" rel="stylesheet" type="Text/css">
+	  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500&display=swap" rel="stylesheet">
+	</head>
+
+	 <nav>
+	    <ul>
+	      <li><a href="{{ url_for("index") }}" id="home_page">Hem</a></li>
+	      <li><a href="{{ url_for("project_list") }}" id="projects_page">Projekt</a></li>
+	      <li><a href="{{ url_for("techniques") }}" id="techniques_page">Tekniker</a></li>
+	    </ul>
+	 </nav>
+	 
+	<body>
+	  
+
+	  {% block body %}
+	  Inget här!
+	  {% endblock %}
+
+
+
+	  <footer>
+	    <div class="Social_Media">
+	      <ul>
+		<li><a href="mailto:hadan326@student.liu.se"><img src="../static/images/outlook_icon_bw.png"></a></li>
+		<li><a href="https://gitlab.liu.se/"><img src="../static/images/gitlab_icon_bw.png"></a></li>
+		<li><a href="https://discord.com/"><img src="../static/images/discord_icon_bw3.png"></a></li>
+		<li><a href="https://www.linkedin.com/"><img src="../static/images/linkedIn_icon_bw.png"></a></li>
+	      </ul>
+	    </div>
+	    Senast uppdaterad: 2022-03-14 <br>
+	    Designad av Hadi Ansari
+	  </footer>
+	</body>
+</html>

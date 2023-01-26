@@ -1,0 +1,529 @@
+/* 
+#######################################################
+###################### General ########################
+#######################################################
+*/
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 40px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #132743;
+    word-wrap: break-word;
+    overflow: auto;
+    color:white;
+   
+}
+
+h1, h2 {
+    font-weight: 500;
+    margin: 0;
+    color: white;
+}
+
+body p {
+    font-weight: 300;
+    color: white;
+}
+
+/* 
+##################################################
+#################### Navbar ######################
+##################################################
+*/
+nav{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    background-color: #272a2b;
+
+}
+
+nav ul{
+    list-style-type: none;
+    padding-top: 4px;
+    margin: 0 auto 0 auto;
+}
+
+nav li{
+    float: left;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+nav a:hover{
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+/* 
+######################################################
+###################### Top area ######################
+######################################################
+*/
+div.top{
+    text-align: center;
+    width: 100%;
+    padding: 200px 0;
+    background-image: url("../images/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+div.top h1 {
+    text-shadow: 3px 3px 2px black;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+form.project_search{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 40px;
+    margin: auto;
+    background-color: rgba(64, 112, 136, 0.75);
+    box-shadow: 2px 2px 6px black;
+}
+
+div.sort{
+    width: 60%;
+    margin:60px auto;
+    display: flex;
+    justify-content: space-around;  
+}
+
+div.sort_item select{
+    width: 150px;
+
+}
+
+div.checkboxes {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #132743;
+}
+div.tech_checkboxes{
+    border-bottom: 2px solid white;
+
+}
+div.search_field_checkboxes{
+    
+
+}
+
+form.tech_search{
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+    background-color: rgba(64, 112, 136, 0.75);
+    border-radius: 15px;
+
+ 
+}
+
+.search_button {
+    background-color: #132743;
+    color: white;
+    padding: 7px 20px;
+    font-weight: 500;
+}
+
+div.search_field {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 0;
+
+}
+
+.search_field input{
+    width: 100%;
+    height: 100%;
+    font-size: 23px;
+    padding: 15px;
+    border: 0;
+    
+}
+
+.btn {
+    height: 100%;
+    width: 70px;
+    background-color: #132743;
+    color: white;
+    position: absolute;
+    right: 0;
+    
+}
+
+/*
+##################################################################
+###################### Main Content or List ######################
+##################################################################
+*/
+div.main{
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    padding: 40px;
+    background-color: #132743;
+}
+
+.main p{
+    font-weight: 500;
+}
+
+div.main a{
+    display: flex;
+    text-decoration: none;
+
+}
+div.project{
+    width: 100%;
+    display: flex;
+}
+
+div.pr_description{
+    padding: 30px;
+    width: 75%;
+}
+
+div.pr_side {
+    width: 25%;
+    
+} 
+
+
+div.pr_info {
+    background-color: #407088;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow:2px 2px 6px black;
+}
+
+div.techniques{
+    height: 100px;
+    line-height: 30px;
+    flex-wrap: wrap;
+    display:flex;
+    
+}
+
+span{
+    font-weight: 300;
+}
+
+ul.info-list a{
+    color: white;
+    text-decoration: underline;
+}
+
+span.technique{
+    height: 35px;
+    box-shadow:1px 1px 4px black;
+    background-color:  #132743;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin-right: 10px;
+}
+
+div.project_overview {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 210px;
+  word-wrap: break-word;
+  background-color: #407088;
+  box-shadow:2px 2px 6px black;
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+div.small_img{
+    width: 25%;
+    border-right: 5px solid #DE8891;
+}
+
+div.small_img img{
+    width: 100%;
+    height: 100%;
+}
+
+div.short_info{
+    width: 75%;
+    padding: 35px;
+}
+
+div.recent_projects{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30px auto;
+    width: 80%;
+    padding: 30px;
+    height: 200px;
+
+}
+
+div.img_container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+
+}
+div.img_container:hover{
+    width: 350px;
+    height: 220px;
+    transition: 0.3s;
+    border: 3px solid #DE8891;
+    
+}
+
+div.centered_txt {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.45);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.img_container img {
+    width: 100%;
+    height: 100%;
+    
+}
+div.img_container a {
+    color: white;
+    text-shadow: 3px 3px 2px black;
+    width: 100%;
+    height: 100%;
+    
+}
+
+div.project_overview p {
+    line-height:1.5;
+}
+
+div.error {
+    padding: 30px;
+    height: 800px;
+
+}
+
+/* 
+#######################################################
+###################### Animation ######################
+#######################################################
+*/
+.project_overview::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project_overview:hover, .recent_projects {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.project_overview:hover::after {
+    opacity: 1;
+}
+
+/* 
+#######################################################
+###################### Footer #########################
+#######################################################
+*/
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+    font-weight: bold;
+    border-top: 3px solid #DE8891;
+    background-color: #272a2b;
+}
+
+div.Social_Media {
+    width: 40%;
+    height: 80px;
+    margin: auto;
+}
+
+div.Social_Media ul{
+    list-style-type: none;
+
+}
+
+div.Social_Media li{
+    float: left;
+    width: 25%;
+    
+}
+
+/* 
+#######################################################
+###################### responsive #####################
+#######################################################
+*/
+@media (max-width: 1600px){
+
+    div.pr_description{
+	padding: 30px;
+	width: 70%;
+    }
+
+    div.pr_side {
+	width: 30%;
+	
+    } 
+
+
+}
+
+
+@media (max-width: 1400px){
+
+    div.pr_description{
+	padding: 30px;
+	width: 65%;
+    }
+
+    div.pr_side {
+	width: 35%;
+	
+    }
+    div.project {
+	display: block;
+    }
+    div.pr_side, div.pr_description {
+	width: 100%;
+	padding: 0;
+    }
+    div.Social_Media {
+	width: 75%;
+    }
+    div.short_info p{
+	display: none;
+    }
+      div.small_img{
+	  width: 45%;
+      }
+      div.short_info{
+	  width: 65%;
+      }
+
+
+}
+
+
+@media (max-width: 550px){
+    div.top h1{
+	font-size: 36px;
+    }
+    
+
+    div.top {
+	padding: 50px 0;
+    }
+    nav a{
+	font-size: 16px;
+	width: 90px;
+
+    }
+    nav a:hover{
+	font-size: 20px;
+    }
+    
+    div.Social_Media {
+	width: 100%;
+    }
+    div.recent_projects{
+	flex-direction: column;
+	padding: 0;
+	margin-top: 40px;
+	width: 100%;
+	height: 600px;
+    }
+    div.img_container {
+	margin: auto;
+	width: 90%;
+	height: 200px;
+
+    }
+    div.img_container:hover {
+	width: 100%;
+	height: 200px;
+
+    }
+    
+/*###################### project list ######################*/
+
+    form.project_search{
+	width: 90%;
+	padding: 40px 10px 40px;
+
+    }
+
+    div.small_img{
+	display: none;
+    }
+
+
+    div.short_info{
+	width: 100%;
+    }
+
+
+    div.sort{
+	display: block;
+	margin: 5px;
+	text-align: center;
+	width: 100%;
+    }
+
+    .sort_item {
+	width: 100%;
+
+    }
+    
+    form.tech_search{
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	
+    }
+    
+
+    
+}
+
+
+
+
+

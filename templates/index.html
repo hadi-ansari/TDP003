@@ -1,0 +1,33 @@
+{% extends "template.html" %}
+{% block body %}
+
+<style>
+        nav a#home_page { border-bottom: 4px solid #ec8291; } 
+</style>
+<div class="top">
+  <h1>Välkommen!</h1>
+</div>
+ 
+<div class="main">
+  <h1>Vem är jag?</h1>
+  <p>Jag heter Hadi och jag är en glad och positiv student som älskar programmering. Jag läser för nuvarande innovativ programmering på Linköpings universitet (andra året). I den här sidan laddar jag upp en beskrivning av mina projekt som jag har hittills gjort. Det går att filtrera och söka på projekt och även hitta information om ett projekt baserad på en eller flera tekniker. Har ni frågor så kan ni gärna kontakta mig via mejl “Hadan326@student.liu.se”!</p>
+  
+  <h2>Senaste projekt:</h2>
+  <div class="recent_projects">
+    {% for project in projects %}
+    <div class="img_container">
+      
+      <a href="{{ url_for ('project', id =  project.project_id ) }}">
+	<img  src="../static/images/{{project.small_image}}" title="Projektnamn: {{project.project_name}}">
+	<div class="centered_txt">{{project.project_name}}</div>
+
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+
+  
+</div>
+{% endblock %}
+

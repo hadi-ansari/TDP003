@@ -1,0 +1,82 @@
+{% extends "template.html" %}
+{% block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css" scoped>
+        nav a#projects_page { border-bottom: 4px solid #ec8291; } 
+</style>
+
+<div class="top">
+  <form class="project_search" id="search">
+    <div class="search_field">
+      <input type="text"  name="search" value="{{ search }}" placeholder="Sök..."><button class="btn"><i class="fa fa-search"></i></button>
+      </div>
+
+    <div class="sort">
+      <div class="sort_item">
+    <strong>Sortera efter:</strong>
+    <select name= "sort">
+      {% for item in sort_by_items %}
+      <option value="{{ item }}" {% if item in sort  %}selected{% endif%}>{{ sort_by_items[item] }}</option>
+      {% endfor %}
+    </select>
+    </div>
+    
+    <div class="sort_item">
+    <strong>Träffordning:</strong>
+    <select name= "order">
+      <option value="asc" {% if "asc" in order %}selected{% endif %}>Stigande</option>
+      <option value="desc" {% if "desc" in order %}selected{% endif %}>Fallande</option>
+    </select>
+    </div>
+    
+    </div>
+
+    <div class="checkboxes">
+      <div class="tech_checkboxes">
+	<strong>Välj tekniker:</strong>
+	<br>
+	{% for t in techniques %}
+	<input type="checkbox" name="technique" id={{t}} value={{t}} autocomplete="on" {% if t in tech_check %} Checked {% endif %}>
+	<label for={{t}}>{{t}}</label>
+	{% endfor %}
+      </div>
+    <div class="search_field_checkboxes">
+      <strong>Välj sökfält:</strong>
+      <br>
+    <input type="checkbox" name="search_field" id="project_name" value="project_name" autocomplete="on" {% if search_check != None and "project_name" in search_check %} Checked {% endif %}>
+    <label for="project_name">Projektnamn</label>
+    
+    <input type="checkbox" name="search_field" id="course_name" value="course_name" autocomplete="on"  {% if search_check != None and "course_name" in search_check %} Checked {% endif %}>
+    <label for="course_name">Kursnamn</label>
+    
+    <input type="checkbox" name="search_field" id="group_size" value="group_size" autocomplete="on" {% if search_check != None and "group_size" in search_check %} Checked {% endif %}>
+    <label for="group_size">Gruppstorlek</label>
+
+    <input type="checkbox" name="search_field" id="course_id" value="course_id" autocomplete="on" {% if search_check != None and "course_id" in search_check %} Checked {% endif %}>
+    <label for="course_id">Kurskod</label>
+
+   <input type="checkbox" name="search_field" id="project_id" value="project_id" autocomplete="on" {% if search_check != None and "project_id" in search_check %} Checked {% endif %}>
+   <label for="project_id">Projekt-ID</label>
+   </div>
+   </div>
+  </form>
+</div>
+
+<div class = "main">
+{% if projects != [] %}
+{% for project in projects %}
+<a href="{{ url_for("project", id= project.project_id) }}"><div class="project_overview">
+  <div class="small_img"><img src="../static/images/{{ project.small_image }}" title="Projektnamn: {{project.project_name}}"></div>
+  <div class="short_info"><h1>{{ project.project_name }}</h1>
+    <p>{{ project.short_description }}</p>
+  </div>
+</div></a>
+<br>
+{% endfor %}
+{% else %}
+Inget hittades!
+{% endif %}
+
+</div>
+
+{% endblock %}

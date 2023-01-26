@@ -1,0 +1,141 @@
+[
+    {
+	"project_name": "Portfolio",
+	"project_id": 1,
+	"course_name": "Egna datormiljön",
+	"course_id": "TDP003",
+	"start_date": "2020-08-20",
+	"end_date":"2020-10-26",
+	"group_size": 2,
+	"academic_credits": "6",
+	"short_description": "En portfoliohemsida som har i syfte att presentera alla projekt som görs under programmets gång",
+	"long_description": "Projektet Egna datormiljön handlar om att skapa ett portfoliosystem i Python 3 som hanterar olika projekt i form av en en webbsida. Webbsidan visar en översikt över de senaste projekten samt information om ägaren på startsidan. De andra sidorna i webbplatsen innefattar en lista av alla projekt som kan sökas igenom inom olika kategorier, en lista där projekt filtreras efter använda tekniker, och en sida där mer information om ett projekt visas när detta projekt har valts av användaren. Portfoliosystemets planerade utseende beskrivs i LoFi-prototypen.",
+	"small_image": "id1_small.jpg",
+	"big_image": "id1_big.jpg",
+	"external_link": "XX",
+	"techniques_used": [
+	    "python",
+	    "html",
+	    "css",
+	    "flask",
+	    "jinja2",
+	    "latex"
+	]
+    },
+    {
+	"project_name": "Arkadspel",
+	"project_id": 2,
+	"course_name": "Objektorienterat system",
+	"course_id": "TDP005",
+	"start_date": "2020-11-13",
+	"end_date": "2020-12-18",
+	"group_size": 2,
+	"academic_credits": "6",
+	"short_description": "Projektet \"Objektorienterat system\" handlade om att bygga ett arkadspel där studenter fick arbetade i par under ungefär en månad.",
+	"long_description": "Projektet \"Objektorienterat system\" handlade om att bygga ett arkadspel där studenter fick arbetade i par under ungefär en månad. Spelet utvecklades med C++ där vi har använt oss SFML biblioteket för utveckling av spelet, Git för versionshantering, Make och Cmake för kompilering av samtliga projekt filer, Clion för att skriva kod, Dia för att rita UML-diagram, Latex för dokumentering och Gimp för bildredigering. Spelet går ut på att spelaren, via sitt flygplan, ska flyga igenom banor där den möter andra fiendeplan och bomber som försöker hindra en på vägen mot slutet. Målet är att samla så många poäng som möjligt genom att skjuta och förstöra så många fiender som möjligt samtidigt som spelaren undviker att själv bli träffad av fienderna eller deras skott. Det kommer även finnas power-ups att plocka upp i varje nivå. Dessa ger diverse positiva effekter som hjälper spelaren med sitt mål. Ju skickligare spelaren är på att samla ihop poäng, desto fler stjärnor får den i slutet av varje nivå. Spelet utspelar sig i en 2D-miljö från ett sidoperspektiv. Spelaren kan röra sig i åtta olika riktningar och skjuta skott mot de ankommande fienderna. Skotten som spelaren skjuter gör skada till fienderna om den träffar och kommer till slut förstöra den. När en fiende förstörs får spelaren en visst antal poäng. Det kommer även då och då att dyka upp Power-ups från högra sidan av skärmen. Fienderna kommer att närma sig från höger om skärmen och röra sig mot vänster. Fiendertyperna kan även ha unika rörelsemönster när de färdas över skärmen. Fienderna gör skada till spelaren antigen genom att vidröra den eller genom att träffa spelaren med sina skott (om de skjuter skott). Spelaren har ett antal liv som förloras allt eftersom den har blivit träffad av fienderna/deras skott. När spelarens liv når noll avslutas nivån.",
+	"small_image": "game_small.png",
+	"big_image": "game_big.png",
+	"external_link": "XX",
+	"techniques_used": [
+	    "c++",
+	    "sfml",
+	    "git",
+	    "make",
+	    "cmake",
+	    "clion",
+	    "dia",
+	    "latex",
+	    "gimp"
+	]
+    },
+    {
+	"project_name": "Gameparser",
+	"project_id": 3,
+	"course_name": "Datorspråk",
+	"course_id": "TDP019",
+	"start_date": "2021-02-11",
+	"end_date": "2021-06-2",
+	"group_size": 2,
+	"academic_credits": "10",
+	"short_description": "Projektet \"Datorspråk\" handlar om skapa ett eget datorspråk. Gameparser är ett datorspråk som riktar sig till programmering av text-baserade spel.",
+	"long_description": "Projektet Datorspråk är det tredje projektet i programmet innovativ programmering och det handlar om att utveckla ett eget datorspråk. Projektet utvecklades av en grupp av två IP-studenter under andra perioden av vårterminen 2021. Språket är designat för (men ej begränsat till) att skapa textbaserade spel. Det har sin grund i Ruby där det via \"rdparse.rb\" översätter skriven kod till Ruby för körning. Syntaxen är inspirerad av både Ruby och Python vilket gör språket användarvänligt. Gameparser ämnar att erbjuda användaren alla verktyg som krävs för att designa en interaktiv och levande spelvärld i ett textbaserat format.",
+	"small_image": "gameparser_small.png",
+	"big_image": "gameparser_big.png",
+	"external_link": "XX",
+	"techniques_used": [
+	    "ruby",
+	    "rdparser",
+	    "git",
+	    "latex",
+	    "gimp"
+	]
+    },
+    {
+	"project_name": "Facebook 2.0",
+	"project_id": 4,
+	"course_name": "Webbprogrammering och interaktivitet",
+	"course_id": "TDP013",
+	"start_date": "2021-09-1",
+	"end_date": "2021-10-15",
+	"group_size": 2,
+	"academic_credits": "6",
+	"short_description": "Projektet TDP013 \"Webbprogrammering och interaktivitet\" handlar om att utveckla en social webbapplikation från grunden. Projektet genomförs av en grupp av två studenter.",
+	"long_description": "Projektet TDP013 \"Webbprogrammering och interaktivitet\" handlar om att utveckla en social webbapplikation från grunden. Projektet genomförs av en grupp av två studenter. I detta projekt utvecklas båda backend och frontend med tekniker såsom Node.js, Mongo DB, HTML, Css (och bootsrap), Javascript (med React) och ett antal ramverk för testning och bygga backend servern. Webbapplikationer ser ut som ett begränsad version av Facebook och det går att skapa ett konto, söka vänner, lägga till/ta bort vänner, acceptera/ignorera vänförfrågningar, publicera inlägg båda på sin och vänners Timeline. Dessutom går det att chatta med vänner via applikationen.",
+	"small_image": "tdp013_small.png",
+	"big_image": "tdp013_big.png",
+	"external_link": "XX",
+	"techniques_used": [
+	    "node.js",
+	    "mongoDB",
+	    "html",
+	    "css",
+	    "bootstrap",
+	    "javascript",
+	    "react",
+	    "mocha",
+	    "code_coverage"
+	]
+    },
+    {
+	"project_name": "Hungrig",
+	"project_id": 5,
+	"course_name": "Entreprenöriell programmering",
+	"course_id": "TDP028",
+	"start_date": "2021-09-1",
+	"end_date": "2022-1-10",
+	"group_size": 1,
+	"academic_credits": "10",
+	"short_description": "Projektet TDP032 \"Entreprenöriell programmering\" handlar om att bygga en android applikation som båda fyller tekniska krav och entreprenöriella krav. Projektet genomfördes individuellt och sträckte sig över hela höstterminen 2021. Detta projekt utvecklades i Android Studio och använder sig av flera Google Api:er för att samla in dynamiska data om olika restauranger.",
+	"long_description": "Projektet TDP032 \"Entreprenöriell programmering\" handlar om att bygga en android applikation som båda fyller tekniska krav och entreprenöriella krav. Projektet genomfördes individuellt och sträckte sig över hela höstterminen 2021. Detta projekt utvecklades i Android Studio och använder sig av flera Google Api:er för att samla in dynamiska data om olika restauranger.Appen är tänkt att hjälpa användaren med att antingen hitta en närmaste restaurang eller erbjuda ett matlagningsrecept så att användaren kan laga mat hemma. Dessa två alternativen som Appen erbjuder uppmuntrar användaren att besöka Appen när hen är hungrig därför döpte jag den till \"Hungring\". Användaren kan logga in i Appen med sitt Google konto och hitta närmaste restauranger eller får tillgång till en samling av olika matlagningsrecept.",
+	"small_image": "tdp028_small.png",
+	"big_image": "tdp028_big.png",
+	"external_link": "XX",
+	"techniques_used": [
+	    "java",
+	    "android_studio",
+	    "firebase",
+	    "google_places_api",
+	    "google_maps"
+	]
+    },
+    {
+	"project_name": "Chattapplikation",
+	"project_id": 6,
+	"course_name": "Programmering C# och .NET Framework",
+	"course_id": "TDDD49",
+	"start_date": "2021-11-1",
+	"end_date": "2022-12-14",
+	"group_size": 2,
+	"academic_credits": "4",
+	"short_description": "Projektet tdd49 \"Programmering i C# och .NET Framework\" handlar om att bygga en chattapplikation för Windows. Projektet utvecklades av två studenter med Microsoft Visual Studio.",
+	"long_description": "Projektet tdd49 \"Programmering i C# och .NET Framework\" handlar om att bygga en chattapplikation för Windows. Projektet utvecklades av två studenter med Microsoft Visual Studio. Projektet är skriven i WPF ramverk och följer MVVM (View, Viewmodel och Model) design mönster. Applikationen har en enklare databas för att kunna spara chatthistoriken lokalt på användarens dator. Det är möjligt att söka bland sina kontakter för att hitta tidigare chatthistoriken. Användaren kan chatta i olika språk och det finns även en BUZZ funktion i chattsidan! :)",
+	"small_image": "tddd49_small.png",
+	"big_image": "tddd49_big.png",
+	"external_link": "XX",
+	"techniques_used": [
+	    "c#",
+	    "mvvm",
+	    "wpf"
+	]
+    }
+]

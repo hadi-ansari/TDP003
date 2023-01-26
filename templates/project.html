@@ -1,0 +1,44 @@
+{% extends "template.html" %}
+{% block body %}
+
+{% if project != None %}
+<style type="text/css" scoped>
+  div.top { background-image: url("../static/images/{{ project.big_image }}");
+    background-position: center;
+    background-repeat: no-repeat;  }
+</style>
+<div class="top">
+  <h1>{{ project.project_name }}</h1>
+</div>
+<div class="main">
+  <div class="project">
+    <div class="pr_description">
+      <p>{{ project.long_description }}</p>
+    </div>
+    <div class="pr_side">
+      <div class="pr_info">
+	<ul class="info-list">
+	  <li>Startdatum: <span>{{ project.start_date }}</span></li>
+	  <li>Slutdatum: <span>{{ project.end_date }}</span></li>
+	  <li>Kursnamn: <span>{{ project.course_name }}</span></li>
+	  <li>Kurskod: <span>{{ project.course_id }}</span></li>
+	  <li>Projekt-id: <span>{{ project.project_id }}</span></li>
+	  <li>Gruppstorlek: <span>{{ project.group_size }}</span></li>
+	  <li>Antal poäng: <span>{{ project.academic_credits }}</span></li>
+	  <li><a href="https://www.google.com/">Extern länk!</a></li>
+	  <li><div class="techniques">Tekniker: {% for t in project.techniques_used %}<span class="technique" > {{t}} </span>  {% endfor %}</div></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="top">
+    <h1 id="title">Inget hittades</h1>
+  </div>
+  <div class="main">
+
+  </div>
+  {% endif %}
+
+</div>
+{% endblock %}

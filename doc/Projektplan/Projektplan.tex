@@ -1,0 +1,174 @@
+\documentclass{TDP003mall}
+
+
+
+\newcommand{\version}{Version 1.0}
+\author{Hadi Ansari, \url{hadan326@student.liu.se}\\
+  Nils Bark, \url{nilba048@student.liu.se}}
+\title{Projektplan}
+\date{2020-09-24}
+\rhead{Hadi Ansari\\
+Nils Bark}
+
+\begin{document}
+\projectpage
+\section{Revisionshistorik}
+\begin{table}[!h]
+\begin{tabularx}{\linewidth}{|l|X|l|}
+\hline
+Ver. & Revisionsbeskrivning & Datum \\\hline
+1.0 & Första versionen av Projektplan & 2020-09-24 \\\hline
+1.1 & Kompletterad version av Projektplan & 2020-09-29\\\hline
+\end{tabularx}
+\end{table}
+
+\section{Introduktion till projektet}
+Projektet ``Egna datormiljön'' handlar om att skapa ett portfoliosystem i Python 3 som hanterar olika projekt i form av en webbsida. Webbsidan visar en översikt över de senaste projekten samt information om ägaren på startsidan. De andra sidorna i webbplatsen innefattar en lista av alla projekt som kan sökas igenom inom olika kategorier, en lista där projekt filtreras efter använda tekniker, och en sida där mer information om ett projekt visas när detta projekt har valts av användaren. Portfoliosystemets planerade utseende beskrivs i LoFi-prototypen.
+
+\subsection{Arbetsplan}
+Arbetet på projektet kommer att utföras i grupper om två personer. Samarbetet sker främst under de arbetspass som beskrivs i planeringsdokumentet och en daglig rapport skrivs i respektive medlems dagbok efter varje arbetspass. Arbetet görs främst i gruppens datorsal men kan komma att göras på distans eller enskilt i hemmet ifall förutsättningarna för grupparbete på plats försämras. Det som görs under arbetspasset bestäms av de deadlines och arbetsområden som specifieras i tidsplaneringen. Kontroll av projektets framfart gentemot planerade deadlines sker löpande under projektets gång och justeringar av arbetets områden eller hastighet kan baseras på detta.
+
+En viktig del av arbetet är det GitLab-projekt som används för att alla filer ska hålla synkroniserade mellan gruppmedlemmarna. Ändringar av projektet pushas via Git i slutet av alla arbetspass, även de som sker individuellt eller utanför planeringen. 
+
+\subsection{Tekniker}
+För att åstadkomma ett fungerande system behövs det flera tekniker. Installation, kontroll, och enkel felsökning av nedanstående tekniker som inte redan finns installerade görs enligt stegen som beskrivs i installationsmanualen. Teknikerna som kommer att användas för att uppnå målet för detta projekt är:
+\begin{itemize}
+\item \textbf{Pyhton:} python är ett programmeringsspråk som kommer att skapa de program som krävs av projektet. Det utgör grunden för bl.a sökfunktionen och datahantering.
+\item \textbf{Flask:} Flask är ett python-baserat webbramverk som används för att skriva webbgränssnitt. Det innehåller massor av moduler eller paket som är användbara för att sSkapa webbapplikationer. Flask kommer att hantera och köra webbgränssnittet för projektet, och kommer att underlätta visning av individuella projekt på projektsidan när användaren har klickat på det. 
+\item \textbf{Jinja:} Jinja är ett underpaket som Flask använder sig av för att skapa HTML-mallar för python. Det kommer att underlätta designen av webbsidorna genom att via sitt mall-system t.ex låta projektets navbar och footer automatiskt visas på alla sidor, och förenklar uppdatering av sådana element.
+\item \textbf{HTML:} Ett standardspråk för att skapa webbsidor. Utgör grunden för skapandet av webbsidan.
+\item \textbf{CSS:} CSS beskriver utseendet av HTML sidor. Används för att designa webbsidans utseende genom projektets gång.
+\item \textbf{Git:} Används för att versionhantering i projektet.
+\item \textbf{JSON:} Ett format som används för sparande av projektdata.
+
+\end {itemize}
+
+\newpage
+\section{Planering}
+Nedan följer det milstolpar som ska uppnås vid eller innan specifika datum. Milstolparna är baserade både på angivna deadlines och den interna planeringen kring hur de olika delarna av projektet bör ha genomförts för att projektet ska bli färdigt i tid. Tidsplaneringen är baserad på en uppdaterad version av planeringsdokumentet.
+\subsection{Milstolpar}
+\textbf{27 sep 18:00:} All planering är färdig och gruppen är påläst om datalagrets krav\\
+\textbf{01 okt 17:00:} En fungerande sökfunktion har skapats och lite eller inget kvarvarande arbete på den ska finnas\\
+\textbf{09 okt 17:00:} Presentationslagret är färdigt\\
+\textbf{12 okt 20:00:} Hemsidan är färdig och kontrollerad inför presentation\\
+\textbf{15 okt 20:00:} Portfolion publicerad och första versionen av systemdokumentationen inlämnad.\\
+\textbf{22 okt 21:00:} Testdokumentation och reflektionsdokumentation är färdiga och inlämnade\\ 
+
+\subsection{Tidsplanering}
+Denna del innehåller en detaljerad planering av hur arbetet på de olika delarna av projektet kommer att läggas upp. Tiden som ges till varje arbetspass är baserat på hur lång tid den delen är beräknad att ta. 
+\section*{Vecka 38}
+
+\subsection*{Deadlines}
+\textbf{Tisdag: }Var mestadels färdig med LoFi-prototypen.\\
+\textbf{Torsdag: }LoFi-prototyp inlämnad.\\
+\-\hspace{47pt}Grundläggande installationsmanual inlämnad.
+
+\subsection*{Arbetspass}
+\textbf{Måndag: }Börja arbeta med LoFi-prototyp, 2h.\\
+\textbf{Tisdag: }Skriv färdigt och lämna in LoFi-prototyp, 4h. \\
+\textbf{Torsdag: }Börja arbeta med Installationsmanualen, 5h.\\
+\textbf{Fredag: }Skriv färdigt och lämna in Installationsmanualen, 2h.
+
+
+\section*{Vecka 39}
+
+
+
+
+\subsection*{Deadlines}
+\textbf{Tisdag: }Bidra till den gemensamma installationsmanualen.\\
+\textbf{Torsdag: }Första utkast av projektplanen är inlämnat.\\
+\-\hspace{47pt}Första versionen av den gemensamma installationsmanualen inlämnad.
+
+\subsection*{Arbetspass}
+\textbf{Måndag: }Hitta och välj uppgiftt att göra i gemensamma installationsmanualen, 2h.\\
+\textbf{Tisdag: }Gör färdigt vald uppgift i gemensamma installationsmanualen, 4h.\\
+\textbf{Onsdag: }Skapa mall och sätt alla rubriker. Flytta över planeringen från planeringsdokumentet 4h.\\
+\textbf{Torsdag: }Skriv innehållet under resterande rubriker, 4h. \\
+\textbf{Fredag - Söndag: }Läs på individuellt om datalagrets krav på egen tid.
+
+
+\section*{Vecka 40}
+\subsection*{Deadlines}
+\textbf{Torsdag: }Bidrag till den gemensamma installationsmanualen inlämnat.\\
+\-\hspace{47pt}Eventuella fel i projektplan och gemensam installationsmanual åtgärdade.\\
+\textbf{Fredag: }Datalagret godkänt av assistent.
+
+\subsection*{Arbetspass}
+\textbf{Måndag: }Komplettera projektplan vid behov, annars jobba på JSON-fil, 2h.\\
+\textbf{Tisdag: }Jobba på JSON-fil, sen sökfunktion, 4h\\
+\textbf{Onsdag: }Hitta område att förbättra och bidra till gemensamma installationsmanualen, 2h, annars sökfunktion\\
+\textbf{Torsdag: }Gör färdig sökfunktion, 4h\\
+\textbf{Fredag: }Finputsa koden, 2h (innan lab).
+
+
+\section*{Vecka 41}
+\subsection*{Deadlines}
+\textbf{Måndag: }Startsida färdigt\\ 
+\textbf{Tisdag: }Tekniksida färdigt\\
+\textbf{Onsdag: }Projektlistsida färdigt\\
+\textbf{Torsdag: }Specifik projektsida färdig\\
+\textbf{Fredag: }Hela presentationslagret färdigt\\
+\subsection*{Arbetspass}
+\textbf{Måndag: }Jobba på startsidan, 4h\\
+\textbf{Tisdag: }Jobba på tekniksidan, 4h\\
+\textbf{Onsdag: }Jobba på Projektlistsidan, 4h\\
+\textbf{Torsdag: }Jobba på den specifika projektsidan, 4h\\
+\textbf{Fredag: }Färdigställ hela presentationslagret, åtgärda eventuella fel eller förseningar, 2h
+
+
+\section*{Vecka 42}
+\subsection*{Deadlines}
+\textbf{Onsdag: }Systemet ska vara redo för demonstration\\
+\textbf{Torsdag: }Systemdemonstration för andra grupper.\\
+\-\hspace{47pt}Portfolion publicerad.\\
+\-\hspace{47pt}Första versionen av systemdokumentationen inlämnad.
+
+\subsection*{Arbetspass}
+\textbf{Måndag: }Färdigställ och kontrollera hela systemet inför presentationen, 3h\\
+\textbf{Tisdag: }Skriv på systemdokumentationen, 3h\\
+\textbf{Onsdag: }Öva inför presentationen (1h), skriv på systemdokumentationen, 4h\\
+\textbf{Torsdag: }Demonstrera systemet för andra grupper, ?h\\
+\textbf{Fredag: }Skriv på reflektionsdokumentet, 2h
+
+
+\section*{Vecka 43}
+\subsection*{Deadlines}
+\textbf{Torsdag: }Testdokumentation inlämnad.\\
+\-\hspace{47pt}Individuellt reflektionsdokument inlämnat.\\
+\-\hspace{47pt}Eventuella brister i systemdokumentationen korrigerade och inlämnade. 
+
+\subsection*{Arbetspass}
+\textbf{Måndag: }Skriv färdigt och lämna in reflektionsdokumentet, 3h\\
+\textbf{Tisdag: }Börja skriva på testdokumentatonen, 2h\\
+\textbf{Onsdag: }Skriv färdigt och lämna in testdokumentationen, 2h\\
+\textbf{Torsdag: }Komplettera systemdokumentationen ifall det behövs, 3h\\
+\newpage
+\section{Beräknad tid jämfört med faktiskt tid}
+I tabellen nedan listas den tid varje delmoment beräknas ta. Den uppdateras löpande under projektens gång med hur lång tid delmomenten tog i praktiken. Den beräknade tiden är den sammanlagda tiden av alla arbetspass som planerats för respektive delmoment.
+\begin{table}[!h]
+\begin{tabularx}{\linewidth}{|X|l|l|}
+\hline
+Delmoment & Beräknad tid  & Faktisk tid \\\hline
+LoFi-prototyp & 6h & 2h \\\hline
+Installationsmanual + Komplettetering & 7h & 5h \\\hline
+Bidrag till gemensam installationsmanual & 6h & 3h\\\hline
+Projektplan + Komplettering & 10h & 6h \\\hline
+Datalager & 12-14h & 15h\\\hline
+Presentationslager & 18h & ?h\\\hline
+Sista kontroll av hela systemet & 3h & ?h\\\hline
+Systemdokumentation & 7h & ?h\\\hline
+Reflektionsdokument & 5h & ?h\\\hline
+Testdokumentation & 4h & ?h\\\hline
+\end{tabularx}
+\end{table}
+\section{Risker}
+Flera olika typer av fel kan dyka upp i ett projekt. T.ex sjukdom, dålig tidsplanering eller strulande programvara. För att minimera effekten av eventuella problem så kontrolleras ständigt gruppens arbete med de deadlines som är utsatta i tidsplaneringen så att åtgärder kan tas i god tid. Möjligheten finns att arbeta på helger eller hemma på egen tid om tidsbrist skulle uppstå.
+
+Vid sjukdom finns det goda möjligheter att jobba över distans, och kontakt kan hållas via Discord och Zoom. Arbetet laddas regelbundet upp till respektive GitLab-projekt och därmed kan den som arbetar hemifrån med säkerhet ha en relevant version av projektet.
+
+Ifall problem uppstår på grund av programstrul eller bristande kunskap så finns det alltid möjligheter att ta hjälp av labbassistenter eller internetsökning. 
+
+Vid seriösa problem som leder till akut tidsbrist finns det mindre nödvändiga delar av projektet som kan prioriteras ned eller tas bort helt och hållet, främst sådant som ligger utanför de specifika kraven för projktet, t.ex extra CSS-design på hemsidan, eller mindre nödvändiga delar av de många dokument som skrivs.
+
+\end{document}
